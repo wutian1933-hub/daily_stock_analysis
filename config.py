@@ -50,8 +50,8 @@ class Config:
     gemini_retry_delay: float = 5.0  # 重试基础延时（秒）
     
     # OpenAI 兼容 API（备选，当 Gemini 不可用时使用）
-    openai_api_key: Optional[str] = sk-wftgoxmhlfzuykemwxudfaudcsdcgplmrsuwgydulzfnouvw
-    openai_base_url: Optional[str] = https://api.siliconflow.cn/v1  # 如: https://api.openai.com/v1
+    openai_api_key: Optional[str] = None
+    openai_base_url: Optional[str] = None  # 如: https://api.openai.com/v1
     openai_model: str = "deepseek-ai/DeepSeek-V3.2"  # OpenAI 兼容模型名称
     
     # === 搜索引擎配置（支持多 Key 负载均衡）===
